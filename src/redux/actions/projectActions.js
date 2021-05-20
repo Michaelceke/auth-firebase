@@ -22,9 +22,9 @@
 
 export const createproject=(project)=>{
    
-    return (dispatch, getState,{getFirebase,getFirestore})=>{
+    return (dispatch)=>{
+   
 
-    
            dispatch({type:"CREATE_PROJECT",project})
         }
 };
