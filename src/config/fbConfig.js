@@ -3,7 +3,7 @@ import "firebase/firestore"
 import "firebase/auth"
 
 
-var firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyBjfCzM2Rqo5rFw4XYFIrzjoLf894XGpE4",
     authDomain: "appfire-server.firebaseapp.com",
     projectId: "appfire-server",
@@ -15,7 +15,7 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
  /*  firebase.firestore().settings({timestampsInSnapshots:true})
  */
- firebase.firestore()
+ firebase.firestore();
  //hello
 
   export default firebase

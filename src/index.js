@@ -3,15 +3,24 @@ import ReactDOM from "react-dom"
 import App from "./App"
 import {Provider} from "react-redux"
 import store from "./redux/store"
-import FirebaseProvider from './firebase/firebase'
+import firebaseConfig from "./config/fbConfig"
 
-//const store=createStore(rootReducer)
-/* ReactDOM.render(<Provider store={store}><App/></Provider>,document.getElementById("root"))
- */
+import {ReactReduxFirebaseprovider} from "react-redux-firebase"
+import {createFirestoreInstance} from "redux-firestore"
+
+const rrfProps={
+    firebaseConfig,
+    config:{},
+    dispatch:store.dispatch,
+    createFirestoreInstance
+};
+
 
 ReactDOM.render(<Provider store={store}>
+  <ReactReduxFirebaseprovider {...rrfProps}>
   <App/> 
-</Provider>,document.getElementById("root"))
+  </ReactReduxFirebaseprovider>
+</Provider>,document.getElementById("root"));
 
 
 
