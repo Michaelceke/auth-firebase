@@ -3,15 +3,12 @@ import ReactDOM from "react-dom"
 import App from "./App"
 import {Provider} from "react-redux"
 import store from "./redux/store"
-import FirebaseProvider from './firebase/firebase'
+import "./index.css"
 
-//const store=createStore(rootReducer)
-/* ReactDOM.render(<Provider store={store}><App/></Provider>,document.getElementById("root"))
- */
 
 ReactDOM.render(<Provider store={store}>
   <App/> 
-</Provider>,document.getElementById("root"))
+</Provider>,document.getElementById("root"));
 
 
 

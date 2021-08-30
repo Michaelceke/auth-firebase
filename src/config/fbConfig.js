@@ -1,9 +1,9 @@
-import  firebase from "firebase/app"
+/* import  firebase from "firebase/app"
 import "firebase/firestore"
 import "firebase/auth"
 
 
-var firebaseConfig = {
+const fbConfig = {
     apiKey: "AIzaSyBjfCzM2Rqo5rFw4XYFIrzjoLf894XGpE4",
     authDomain: "appfire-server.firebaseapp.com",
     projectId: "appfire-server",
@@ -12,9 +12,10 @@ var firebaseConfig = {
     appId: "1:399575000024:web:447f0d6117e51ad1d888ad"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
- /*  firebase.firestore().settings({timestampsInSnapshots:true})
- */
- firebase.firestore()
+  firebase.initializeApp(fbConfig);
+ //  firebase.firestore().settings({timestampsInSnapshots:true})
 
-  export default firebase
+ firebase.firestore();
+ //hello
+
+  export default firebase */
